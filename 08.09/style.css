@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,500&display=swap');
 /*Her stoppet vi i forelesningen*/
 /**/
 *{
@@ -5,7 +6,7 @@
 }
 body{
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header nav h3 {
@@ -25,6 +26,10 @@ header nav ul li{
 header nav a{
     color:#000;
     text-decoration: none;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
 }
 
 nav{
@@ -71,6 +76,13 @@ main article{
 
 #breadcrumbs li{
     display: inline-block;    
+}
+
+#breadcrumbs li::after{
+    content: ">";
+}
+#breadcrumbs li:last-child::after{
+    content: "";
 }
 
 article img{
