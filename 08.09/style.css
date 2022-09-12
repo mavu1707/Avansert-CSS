@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,500&display=swap');
 /*Her stoppet vi i forelesningen*/
 /**/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -87,6 +88,13 @@ main article{
 
 #breadcrumbs li{
     display: inline-block;    
+}
+
+#breadcrumbs li::after{
+    content: ">";
+}
+#breadcrumbs li:last-child::after{
+    content: "";
 }
 
 article img{
